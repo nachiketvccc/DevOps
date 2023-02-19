@@ -1,4 +1,5 @@
 import java.util.Scanner; // Import the Scanner class
+# This is java import statement
 
 public class MyClass {
     public static void main(String[] args) {
