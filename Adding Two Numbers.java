@@ -20,61 +20,80 @@ public class MyClass {
     }
 }
 
-# Module - 2
-    
+Module -2 
+ 
+// Java program for simple calculator
+
+import java.io.*;
+import java.lang.*;
+import java.lang.Math;
 import java.util.Scanner;
+public class BasicCalculator {
 
-class Main {
-  public static void main(String[] args) {
+	public static void main(String[] args)
+	{
+		// stores two numbers
+		double num1, num2;
 
-    char operator;
-    Double number1, number2, result;
+		// Take input from the user
+		Scanner sc = new Scanner(System.in);
 
-    // create an object of Scanner class
-    Scanner input = new Scanner(System.in);
+		System.out.println("Enter the numbers");
 
-    // ask users to enter operator
-    System.out.println("Choose an operator: +, -, *, or /");
-    operator = input.next().charAt(0);
+		// take the inputs
+		num1 = sc.nextDouble();
 
-    // ask users to enter numbers
-    System.out.println("Enter first number");
-    number1 = input.nextDouble();
+		num2 = sc.nextDouble();
 
-    System.out.println("Enter second number");
-    number2 = input.nextDouble();
+		System.out.println("Enter the operator (+,-,*,/)");
 
-    switch (operator) {
+		char op = sc.next().charAt(0);
 
-      // performs addition between numbers
-      case '+':
-        result = number1 + number2;
-        System.out.println(number1 + " + " + number2 + " = " + result);
-        break;
+		double o = 0;
 
-      // performs subtraction between numbers
-      case '-':
-        result = number1 - number2;
-        System.out.println(number1 + " - " + number2 + " = " + result);
-        break;
+		switch (op) {
 
-      // performs multiplication between numbers
-      case '*':
-        result = number1 * number2;
-        System.out.println(number1 + " * " + number2 + " = " + result);
-        break;
+		// case to add two numbers
+		case '+':
 
-      // performs division between numbers
-      case '/':
-        result = number1 / number2;
-        System.out.println(number1 + " / " + number2 + " = " + result);
-        break;
+			o = num1 + num2;
 
-      default:
-        System.out.println("Invalid operator!");
-        break;
-    }
+			break;
 
-    input.close();
-  }
+		// case to subtract two numbers
+		case '-':
+
+			o = num1 - num2;
+
+			break;
+
+		// case to multiply two numbers
+		case '*':
+
+			o = num1 * num2;
+
+			break;
+
+		// case to divide two numbers
+		case '/':
+
+			o = num1 / num2;
+
+			break;
+
+		default:
+
+			System.out.println("You enter wrong input");
+
+			break;
+		}
+
+		System.out.println("The final result:");
+
+		System.out.println();
+
+		// print the final result
+		System.out.println(num1 + " " + op + " " + num2
+						+ " = " + o);
+	}
 }
