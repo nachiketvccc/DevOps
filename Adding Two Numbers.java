@@ -1,7 +1,7 @@
 #  Adding of two numbers
 # This is java program
 # TRY TRY!!
-	
+# python >>> java	
 # java code 
 	# Always give comment
 
