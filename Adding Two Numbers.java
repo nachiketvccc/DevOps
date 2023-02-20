@@ -1,6 +1,8 @@
 #  Adding of two numbers
 # This is java program
 # TRY TRY!!
+	
+# java code 
 	# Always give comment
 
 import java.util.Scanner; // Import the Scanner class
